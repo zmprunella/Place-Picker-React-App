@@ -72,7 +72,7 @@ function App() {
 
   return (
     <>
-      <Modal open={modalisOpen}>
+      <Modal open={modalisOpen} onClose={handleStopRemovePlace}>
         <DeleteConfirmation
           onCancel={handleStopRemovePlace}
           onConfirm={handleRemovePlace}
